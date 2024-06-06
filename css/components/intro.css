@@ -1,0 +1,119 @@
+.intro {
+	background-color: #a95094;
+	height: 850px;
+	position: relative;
+	overflow: hidden;
+}
+.intro-washer {
+	position: absolute;
+	bottom: -10px;
+	left: -30px;
+}
+.intro-container {
+	height: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+.intro-repairman {
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+}
+.intro-text {
+	z-index: 50;
+	max-width: 664px;
+}
+.intro__title {
+	font-family: "Norms-ExtraBold", sans-serif;
+	font-size: calc(38px + 29 * (100vw - 320px) / (1440 - 480));
+	line-height: 95%;
+	letter-spacing: -0.015em;
+	color: #ffffff;
+	margin-bottom: 25px;
+}
+.intro__subtitle {
+	font-family: "Norms-Medium", sans-serif;
+	color: #fff;
+	max-width: 460px;
+	margin-bottom: 35px;
+	font-size: calc(18px + 2 * (100vw - 320px) / (1440 - 480));
+	line-height: 24px;
+}
+.intro__button {
+	font-family: "Norms-Medium", sans-serif;
+	background: linear-gradient(to right, #ff00e6, #c73850);
+	font-size: 16px;
+	color: #fff;
+	background-color: #000;
+	padding: 18px 50px;
+	box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.6); 
+	-webkit-transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-o-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.intro__button:hover {
+	background-color: #ffc464;
+	color: #000;
+}
+.intro__offer {
+	position: absolute;
+	bottom: 25px;
+	left: 0;
+	max-width: 1170px;
+	width: 100%;
+	z-index: 50;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 14px 40px;
+	color: #fff;
+	background-color: #000;
+	border-radius: 8px;
+	transform: translate(120%, 0px);
+	opacity: 0;
+}
+.intro__offer._active {
+	transform: translate(0px, 0px);
+	opacity: 1;
+}
+.intro__offer-close {
+	margin-right: 25px;
+	cursor: pointer;
+}
+.intro__offer.close {
+	transform: translate(-150%, 0px);
+}
+.intro__offer.open {
+	transform: translate(150%, 0px);
+}
+.intro__offer-text {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 20px;
+	position: relative;
+}
+.intro__offer-text:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -20px;
+	width: 10px;
+	height: 10px;
+	transform: translateY(-50%);
+	background-color: #78c23e;
+	border-radius: 100%;
+}
+.intro__offer-click {
+	color: #ffc464;
+}
+.intro__offer-click:hover {
+	color: #fff;
+}
+.intro__offer-click a {
+	margin-right: 25px;
+}

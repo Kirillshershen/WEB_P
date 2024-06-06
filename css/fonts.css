@@ -1,0 +1,199 @@
+@font-face {
+	font-family: "Norms-ExtraBold";
+	src: url("../fonts/TTNorms-ExtraBold.eot");
+	src: local("☺"), url("../fonts/TTNorms-ExtraBold.woff") format("woff"),
+		url("../fonts/TTNorms-ExtraBold.ttf") format("truetype"), url("../fonts/TTNorms-ExtraBold.svg") format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Bold";
+	src: url("../fonts/TTNorms-Bold.eot");
+	src: local("☺"), url("../fonts/TTNorms-Bold.woff") format("woff"), url("../fonts/TTNorms-Bold.ttf") format("truetype"),
+		url("../fonts/TTNorms-Bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Medium";
+	src: url("../fonts/TTNorms-Medium.eot");
+	src: local("☺"), url("../fonts/TTNorms-Medium.woff") format("woff"),
+		url("../fonts/TTNorms-Medium.ttf") format("truetype"), url("../fonts/TTNorms-Medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Regular";
+	src: url("../fonts/TTNorms-Regular.eot");
+	src: local("☺"), url("../fonts/TTNorms-Regular.woff") format("woff"),
+		url("../fonts/TTNorms-Regular.ttf") format("truetype"), url("../fonts/TTNorms-Regular.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+/* Ненужные шрифты */
+@font-face {
+	font-family: "Norms-Black";
+	src: url("../fonts/TTNorms-Black.eot");
+	src: local("☺"), url("../fonts/TTNorms-Black.woff") format("woff"),
+		url("../fonts/TTNorms-Black.ttf") format("truetype"), url("../fonts/TTNorms-Black.svg") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-ExtraLight";
+	src: url("../fonts/TTNorms-ExtraLight.eot");
+	src: local("☺"), url("../fonts/TTNorms-ExtraLight.woff") format("woff"),
+		url("../fonts/TTNorms-ExtraLight.ttf") format("truetype"), url("../fonts/TTNorms-ExtraLight.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Heavy";
+	src: url("../fonts/TTNorms-Heavy.eot");
+	src: local("☺"), url("../fonts/TTNorms-Heavy.woff") format("woff"),
+		url("../fonts/TTNorms-Heavy.ttf") format("truetype"), url("../fonts/TTNorms-Heavy.svg") format("svg");
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Light";
+	src: url("../fonts/TTNorms-Light.eot");
+	src: local("☺"), url("../fonts/TTNorms-Light.woff") format("woff"),
+		url("../fonts/TTNorms-Light.ttf") format("truetype"), url("../fonts/TTNorms-Light.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Norms-Thin";
+	src: url("../fonts/TTNorms-Thin.eot");
+	src: local("☺"), url("../fonts/TTNorms-Thin.woff") format("woff"), url("../fonts/TTNorms-Thin.ttf") format("truetype"),
+		url("../fonts/TTNorms-Thin.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}
+.btn-up {
+	/* фиксированное позиционирование */
+	position: fixed;
+	/* цвет фона */
+	background-color: #673ab7;
+	/* расстояние от правого края окна браузера */
+	right: 20px;
+	/* расстояние от нижнего края окна браузера */
+	bottom: 0;
+	/* скругление верхнего левого угла */
+	border-top-left-radius: 8px;
+	/* скругление верхнего правого угла */
+	border-top-right-radius: 8px;
+	/* вид курсора */
+	cursor: pointer;
+	/* отображение элемента как flex */
+	display: flex;
+	/* выравниваем элементы внутри элемента по центру вдоль поперечной оси */
+	align-items: center;
+	/* выравниваем элементы внутри элемента по центру вдоль главной оси */
+	justify-content: center;
+	/* ширина элемента */
+	width: 60px;
+	/* высота элемента */
+	height: 50px;
+	/* перемещаем элемент на передний план */
+	z-index: 9999;
+}
+
+  
+  .btn-up::before {
+	content: "";
+	width: 40px;
+	height: 40px;
+	background: transparent no-repeat center center;
+	background-size: 100% 100%;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+	z-index: 9999;  
+}
+  
+  .btn-up_hide {
+	display: none;
+	z-index: 9999; 
+}
+  
+  @media (hover: hover) and (pointer: fine) {
+	.btn-up:hover {
+	  background-color: #512da8; /* цвет заднего фона при наведении */
+	  z-index: 9999;
+	}
+  }
+  /* Стили для модального окна */
+.modal {
+	display: none; /* Скрыть окно по умолчанию */
+	position: fixed; /* Фиксированное позиционирование, чтобы окно оставалось на месте при прокрутке страницы */
+	z-index: 1000; /* Поместить окно на передний план */
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  }
+  
+  /* Стили для содержимого модального окна */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 20% auto; /* Позиционирование по центру */
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	max-width: 400px;
+	border-radius: 10px;
+  }
+  
+  /* Стили для кнопки закрытия */
+  .close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+  }
+  
+  /* Стили для формы в модальном окне */
+  form {
+	display: flex;
+	flex-direction: column;
+  }
+  
+  label {
+	margin-bottom: 8px;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  button {
+	padding: 8px;
+	margin-bottom: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+  }
+  
+  button {
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	cursor: pointer;
+  }
+  
+  button:hover {
+	background-color: #45a049;
+  }
+  

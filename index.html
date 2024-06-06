@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fixper</title>
+	<link rel="shortcut icon" href="./img/svg/logo.svg" type="image/x-icon">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	
+	<div class="modal">
+		<div class="modal-content">
+		  <span class="close">&times;</span>
+		  <h2>Оставьте заявку на звонок</h2>
+		  <form action="#">
+			<label for="name">Ваше имя:</label>
+			<input type="text" id="name" name="name" minlength="4" required>
+			<label for="phone">Ваш номер телефона:</label>
+<input type="tel" id="phone" name="phone" pattern="\d{4,}" required title="Минимум 4 цифры" oninput="this.value = this.value.replace(/\D/g,'')" minlength="4" required>
+
+			<button type="submit">Заказать звонок</button>
+		  </form>
+		</div>
+	  </div>
+	
+	  <script src="script.js"></script>
+	  
+	<div class="btn-up btn-up_hide"></div>
+	<header class="header" id="header">
+		<div class="header__line"></div>
+		<div class="container">
+			<div class="header__body">
+				<a href="#!" class="header__logo">
+					<img src="img/svg/logo.svg" alt="логотип">
+				</a>
+				<nav class="header__nav">
+					<ul class="nav__list">
+						<li><a class="header__link" href="#problems">Диагностика</a></li>
+						<li><a class="header__link" href="#price">Стоимость</a></li>
+						<li><a class="header__link" href="#team">Мастера</a></li>
+						<li><a class="header__link" href="#reviews">Отзывы</a></li>
+						<li><a class="header__link" href="#questions">Вопросы</a></li>
+					</ul>
+				</nav>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<div class="header__contacts">
+					<p class="header__place">Москва</p>
+					<button class="header__button btn-reset">Позвонить</button>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="intro">
+			<div class="intro-washer">
+				<img src="img/intro-washer.png" alt="стиралка">
+			</div>
+			<div class="intro-container container">
+				<div class="intro-repairman">
+					<img src="img/repairman-1.png" alt="fixcellent">
+				</div>
+				<div class="intro-text">
+					<h1 class="intro__title">
+						Ремонт стиральных машин на дому c годовой гарантией
+					</h1>
+					<p class="intro__subtitle">
+						<span class="text-yellow">Отремонтируем на дому</span> или бесплатно завезем и доставим обратно
+						из
+						сервисного центра
+					</p>
+					<button class="intro__button btn-reset">
+						Заказать звонок
+					</button>
+				</div>
+				<div class="intro__offer _anim-items _anim-no-hide">
+					<img src="img/svg/close.svg" alt="закрыть" class="intro__offer-close offer-1">
+					<p class="intro__offer-text offer-2">
+						<span class="text-yellow">Мы открыты до 21:00</span>, позвоните сегодня и мы сделаем скидку 15%!
+					</p>
+					<div class="intro__offer-click offer-3">
+						<a href="#!">
+							Получить скидку
+						</a>
+						<a href="#!" class="_icon-arrow-right"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="advant">
+			<div class="container">
+				<div class="advant__row">
+					<div class="advant__column _anim-items">
+						<img src="img/svg/advant-1.svg" alt="преимущества" class="about__column-img">
+						<p class="advant__column-text">
+							Фирменные запчасти в наличии
+						</p>
+					</div>
+					<div class="advant__column _anim-items">
+						<img src="img/svg/advant-2.svg" alt="преимущества" class="about__column-img">
+						<p class="advant__column-text">
+							Бесплатный выезд мастера от 45 мин
+						</p>
+					</div>
+					<div class="advant__column _anim-items">
+						<img src="img/svg/advant-3.svg" alt="преимущества" class="about__column-img">
+						<p class="advant__column-text">
+							Гарантия 18 месяцев на ремонт
+						</p>
+					</div>
+					<div class="advant__column _anim-items">
+						<img src="img/svg/advant-4.svg" alt="преимущества" class="about__column-img">
+						<p class="advant__column-text">
+							Проверенные и опытные мастера
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="problems" id="problems">
+			<div class="problems-container container">
+				<div class="problems__decision">
+					<div class="problems__body">
+						<p class="problems__subtitle">
+							Онлайн-диагностика
+						</p>
+						<h2 class="problems__title _anim-items _anim-no-hide">
+							Какая у вас проблема?
+						</h2>
+
+						<div class="problems__list">
+							<a class="problems__list-button">
+								Не включается
+							</a>
+							<a class="problems__list-button">
+								Не выключается
+							</a>
+							<a class="problems__list-button">
+								Не нагревает воду
+							</a>
+							<a class="problems__list-button">
+								Все работет, но мне скучно и я хочу пообщаться с мастером
+							</a>
+							<a class="problems__list-button">
+								Не крутится барабан
+							</a>
+							<a class="problems__list-button">
+								Не работает кнопка включения
+							</a>
+							<a class="problems__list-button">
+								Не выключается
+							</a>
+							<a class="problems__list-button">
+								Иная проблема
+							</a>
+							<a class="problems__list-button">
+								Не крутится барабан
+							</a>
+							<a class="problems__list-button">
+								Не крутится барабан
+							</a>
+							<a class="problems__list-button">
+								Не работает кнопка включения
+							</a>
+						</div>
+						<div class="problems__warning">
+							<img src="img/svg/problems-warning.svg" alt="warning">
+							<p class="problems__warning-text">Выберите проблему и узнайте её решение</p>
+						</div>
+					</div>
+					<div class="decision__body">
+						<p class="decision__subtitle">
+							<img src="img/svg/arrow-left.svg" alt="">
+							Выбрать другую проблему
+						</p>
+						<p class="decision__title">
+							Вероятней всего:
+						</p>
+						<div class="decision__list">
+							<div class="decision__item">
+								<img src="img/svg/decision-85.svg" alt="" class="decision__img">
+								<div class="decicion__text">
+									<p class="decion__text-name">
+										Замена фильтра
+									</p>
+									<div class="decicion__text-info">
+										<p class="decision__text-price">
+											1 200₽
+										</p>
+										<p class="decision__text-part">
+											+ запчасть от 3500₽
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="decision__item">
+								<img src="img/svg/decision-85.svg" alt="" class="decision__img">
+								<div class="decicion__text">
+									<p class="decion__text-name">
+										Замена фильтра
+									</p>
+									<div class="decicion__text-info">
+										<p class="decision__text-price">
+											1 200₽
+										</p>
+										<p class="decision__text-part">
+											+ запчасть от 3500₽
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="decision__item">
+								<img src="img/svg/decision-85.svg" alt="" class="decision__img">
+								<div class="decicion__text">
+									<p class="decion__text-name">
+										Замена фильтра
+									</p>
+									<div class="decicion__text-info">
+										<p class="decision__text-price">
+											1 200₽
+										</p>
+										<p class="decision__text-part">
+											+ запчасть от 3500₽
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="problems__mobile">
+					<p class="problems__subtitle">
+						Онлайн-диагностика
+					</p>
+					<h2 class="problems__title _anim-items _anim-no-hide">
+						Какая у вас проблема?
+					</h2>
+					<div class="problems__list">
+						<a class="problems__list-button">
+							Не включается
+						</a>
+						<a class="problems__list-button">
+							Не выключается
+						</a>
+						<a class="problems__list-button">
+							Не работает кнопка включения
+						</a>
+						<a class="problems__list-button">
+							Все работет, но мне скучно и я хочу пообщаться с мастером
+						</a>
+						<a class="problems__list-button">
+							Не крутится барабан
+						</a>
+						<a class="problems__list-button">
+							Не нагревает воду
+						</a>
+						<a class="problems__list-button">
+							Иная проблема
+						</a>
+						<a class="problems__list-button">
+							Очень сильно болтается
+						</a>
+						<a class="problems__list-button">
+							Сильно крутится барабан
+						</a>
+						<a class="problems__list-button">
+							Не работает кнопка сброса
+						</a>
+					</div>
+					<div class="problems__warning">
+						<img src="img/svg/problems-warning.svg" alt="warning">
+						<p class="problems__warning-text">Выберите проблему и узнайте её решение</p>
+					</div>
+				</div>
+			</div>
+			<img src="img/problems-washer.png" alt="стиралка" class="problems-washer _anim-items _anim-no-hide">
+			<img src="img/problems-pattern.jpg" alt="узор" class="problems-pattern">
+			<img src="img/problems-pattern-2.jpg" alt="узор" class="problems-pattern-2">
+		</section>
+
+		
+
+		<section class="team" id="team">
+			<div class="container">
+				<p class="team__subtitle">
+					В нашем штате 37 сотрудников
+				</p>
+				<h2 class="team__title _anim-items _anim-no-hide">
+					Мы большая команда профессионалов
+				</h2>
+				<div class="swiper-team swiper-container">
+					<div class="swiper-wrapper">
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img   style="filter: brightness(70%)" src="img/person-1.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Александр Федулов
+									</p>
+									<p class="person__specialty">
+										Ремонтник
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											398 ремонтных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											3 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,5
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img style="transform: rotate(-15deg);" src="img/person-2.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Максим Олейников
+									</p>
+									<p class="person__specialty">
+										Грузчик
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											1246 подъёмных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											4 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,7
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img src="img/person-3.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Владимир Ефтухов
+									</p>
+									<p class="person__specialty">
+										Менеджер
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											управляющий 3 отделов
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											6 лет в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,6
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img src="img/person-4.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Александр Федулов
+									</p>
+									<p class="person__specialty">
+										Ремонтник
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											398 ремонтных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											3 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,5
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img src="img/person-5.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Александр Федулов
+									</p>
+									<p class="person__specialty">
+										Ремонтник
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											398 ремонтных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											3 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,5
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img src="img/person-6.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Александр Федулов
+									</p>
+									<p class="person__specialty">
+										Ремонтник
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											398 ремонтных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											3 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,5
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="team__column swiper-slide _anim-items _anim-no-hide">
+							<div class="team__person">
+								<img src="img/person-7.jpg" alt="" class="person__img">
+								<div class="person__text">
+									<p class="person__name">
+										Александр Федулов
+									</p>
+									<p class="person__specialty">
+										Ремонтник
+									</p>
+									<ul class="person__list">
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											398 ремонтных работ
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											3 года в Fixper
+										</li>
+										<li>
+											<img src="img/svg/person-icon.svg" alt="person-icon" class="person-icon">
+											Рейтинг Fixper 4,5
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-click">
+						<div class="swiper-right">
+							<div class="button-prev">Назад</div>
+							<div class="button-next">Далее</div>
+							<img src="img/svg/arrow-right.svg" alt="">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="reviews" id="reviews">
+			<div class="container">
+				<h2 class="reviews__title _anim-items _anim-no-hide">
+					Нас высоко оценивают
+				</h2>
+				<div class="swiper-reviews swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide _anim-items _anim-no-hide">
+							<div class="reviews__card">
+								<div class="reviews__top">
+									<img src="img/reviews-1.jpg" alt="person">
+
+									<div class="reviews__info">
+										<p class="reviews__name">
+											Андрей Савинов
+										</p>
+										<p class="reviews__date">
+											30 января 2021
+										</p>
+									</div>
+								</div>
+								<p class="reviews__bottom">
+									Раза три, наверное, я вызывал Виталю. Могу сказать только хорошее - приезжал во
+									столько, во сколько
+									договаривались, без опозданий. Сделал все на совесть - то что менял до сих пор
+									работает. Ну и показал
+									как фильтр чистить, за что ему отдельное спасибо!
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide _anim-items _anim-no-hide">
+							<div class="reviews__card">
+								<div class="reviews__top">
+									<img src="img/reviews-1.jpg" alt="person">
+
+									<div class="reviews__info">
+										<p class="reviews__name">
+											Андрей Савинов
+										</p>
+										<p class="reviews__date">
+											30 января 2021
+										</p>
+									</div>
+								</div>
+								<p class="reviews__bottom">
+									Раза три, наверное, я вызывал Виталю. Могу сказать только хорошее - приезжал во
+									столько, во сколько
+									договаривались, без опозданий. Сделал все на совесть - то что менял до сих пор
+									работает. Ну и показал
+									как фильтр чистить, за что ему отдельное спасибо!
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide _anim-items _anim-no-hide">
+							<div class="reviews__card">
+								<div class="reviews__top">
+									<img src="img/reviews-1.jpg" alt="person">
+
+									<div class="reviews__info">
+										<p class="reviews__name">
+											Андрей Савинов
+										</p>
+										<p class="reviews__date">
+											30 января 2021
+										</p>
+									</div>
+								</div>
+								<p class="reviews__bottom">
+									Раза три, наверное, я вызывал Виталю. Могу сказать только хорошее - приезжал во
+									столько, во сколько
+									договаривались, без опозданий. Сделал все на совесть - то что менял до сих пор
+									работает. Ну и показал
+									как фильтр чистить, за что ему отдельное спасибо!
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide _anim-items _anim-no-hide">
+							<div class="reviews__card">
+								<div class="reviews__top">
+									<img src="img/reviews-1.jpg" alt="person">
+
+									<div class="reviews__info">
+										<p class="reviews__name">
+											Андрей Савинов
+										</p>
+										<p class="reviews__date">
+											30 января 2021
+										</p>
+									</div>
+								</div>
+								<p class="reviews__bottom">
+									Раза три, наверное, я вызывал Виталю. Могу сказать только хорошее - приезжал во
+									столько, во сколько
+									договаривались, без опозданий. Сделал все на совесть - то что менял до сих пор
+									работает. Ну и показал
+									как фильтр чистить, за что ему отдельное спасибо!
+								</p>
+							</div>
+						</div>
+						<div class="swiper-slide _anim-items _anim-no-hide">
+							<div class="reviews__card">
+								<div class="reviews__top">
+									<img src="img/reviews-1.jpg" alt="person">
+
+									<div class="reviews__info">
+										<p class="reviews__name">
+											Андрей Савинов
+										</p>
+										<p class="reviews__date">
+											30 января 2021
+										</p>
+									</div>
+								</div>
+								<p class="reviews__bottom">
+									Раза три, наверное, я вызывал Виталю. Могу сказать только хорошее - приезжал во
+									столько, во сколько
+									договаривались, без опозданий. Сделал все на совесть - то что менял до сих пор
+									работает. Ну и показал
+									как фильтр чистить, за что ему отдельное спасибо!
+								</p>
+							</div>
+						</div>
+						
+						
+						
+					</div>
+					<div class="swiper-click">
+						<div class="swiper-right">
+							<div class="button-prev">Назад</div>
+							<div class="button-next">Далее</div>
+							<img src="img/svg/arrow-right.svg" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="rating">
+			<div class="container">
+				<div class="rating__list _anim-items _anim-no-hide">
+					<img src="img/rating-1.jpg" alt="rating">
+					<img src="img/rating-2.jpg" alt="rating">
+					<img src="img/rating-3.jpg" alt="rating">
+				</div>
+			</div>
+		</section>
+
+		<section class="questions" id="questions">
+			<div class="container">
+				<div class="questions__body">
+					<div class="question__info _anim-items _anim-no-hide">
+						<h2 class="questions__title _anim-items _anim-no-hide">
+							Часто задаваемые вопросы
+						</h2>
+						<p class="questions__subtitle _anim-items _anim-no-hide">
+							Не нашли ответ на свой вопрос? Оставьте заявку и наш специалист свяжется и ответит на ваш
+							вопрос
+						</p>
+					</div>
+					<div class="questions__list _anim-items _anim-no-hide">
+						<div class="questions__item">
+							<div class="questions__click">
+								<p class="questions__question">Где почитать отзывы о вас?</p>
+								<img src="img/svg/plus.svg" alt="" class="questions__img">
+							</div>
+							<div class="questions__answer">
+								<p>
+									Текст.
+								</p>
+							</div>
+						</div>
+						<div class="questions__item">
+							<div class="questions__click">
+								<p class="questions__question">Сколько времени длится ремонт?</p>
+								<img src="img/svg/plus.svg" alt="questions" class="questions__img">
+							</div>
+							<div class="questions__answer">
+								<p>
+									Текст.
+								</p>
+							</div>
+						</div>
+						<div class="questions__item">
+							<div class="questions__click">
+								<p class="questions__question">Какие марки стиральных машин вы ремонтируете?</p>
+								<img src="img/svg/plus.svg" alt="questions" class="questions__img">
+							</div>
+							<div class="questions__answer">
+								<p>
+									Текст.
+								</p>
+							</div>
+						</div>
+						<div class="questions__item">
+							<div class="questions__click">
+								<p class="questions__question">Я живу в московской области, сможете приехать?</p>
+								<img src="img/svg/plus.svg" alt="questions" class="questions__img">
+							</div>
+							<div class="questions__answer">
+								<p>
+									Текст.
+								</p>
+							</div>
+						</div>
+						<div class="questions__item">
+							<div class="questions__click">
+								<p class="questions__question">Как производится контроль качества?</p>
+								<img src="img/svg/plus.svg" alt="questions" class="questions__img">
+							</div>
+							<div class="questions__answer">
+								<p>
+									Текст.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__logo">
+				<a href="#!" class="">
+					<img src="img/svg/footer-logo.svg" alt="логотип">
+				</a>
+			</div>
+			<div class="footer__top">
+				<nav class="footer__nav">
+					<ul class="footer__list">
+						<li><a href="#problems">Диагностика</a></li>
+						<li><a href="#price">Стоимость</a></li>
+						<li><a href="#team">Мастера</a></li>
+						<li><a href="#reviews">Отзывы</a></li>
+						<li><a href="#questions">Вопросы</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="footer__center">
+				<p class="footer__text">Способы оплаты:</p>
+				<div class="footer__center-img">
+					<div class="footer__center-left">
+						<img src="img/svg/footer-1.svg" alt="способ оплаты">
+						<img src="img/svg/footer-2.svg" alt="способ оплаты">
+						<img src="img/svg/footer-3.svg" alt="способ оплаты">
+					</div>
+					<div class="footer__center-right">
+						<img src="img/svg/footer-4.svg" alt="способ оплаты">
+						<img src="img/svg/footer-5.svg" alt="способ оплаты">
+						<img src="img/svg/footer-6.svg" alt="способ оплаты">
+					</div>
+				</div>
+			</div>
+			<div class="footer__bottom">
+				<a href="#!" class="footer__info">Сервис ремонта бытовой и цифровой техники</a>
+				<a href="#!" class="footer__info">ЧПТУП «МИКАИЛ» 192007601</a>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

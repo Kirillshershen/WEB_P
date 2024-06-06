@@ -1,0 +1,18 @@
+.rating {
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #fafafa;
+}
+.rating__list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
+	transform: translate(0px, 70%);
+	-webkit-transition: all 0.8s ease 0s;
+	-moz-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.rating__list._active {
+	transform: translate(0px, 0px);
+}

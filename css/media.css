@@ -1,0 +1,351 @@
+@media (max-width: 1100px) {
+	.header__contacts {
+		padding-top: 20px;
+		justify-content: space-between;
+		width: 100%;
+	}
+	.header__line {
+		display: block;
+	}
+	.intro {
+		height: 1105px;
+	}
+	.intro-container {
+		display: block;
+		padding-top: 170px;
+	}
+	.intro-repairman {
+		width: 574px;
+		left: 50%;
+		transform: translateX(-40%);
+	}
+	.intro-washer {
+		width: 354px;
+		height: 498px;
+		left: 30px;
+	}
+	.intro-text {
+		max-width: none;
+	}
+	.intro__title {
+		text-align: center;
+	}
+	.intro__subtitle {
+		text-align: center;
+		margin: 0 auto 530px auto;
+		position: relative;
+		z-index: 10;
+	}
+	.intro__button {
+		margin: 0 auto;
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: pointer;
+	}
+	.intro__offer {
+		padding: 14px 15px;
+		border-top-left-radius: 8px;
+		border-top-right-radius: 8px;
+		border-bottom-left-radius: 0px;
+		border-bottom-right-radius: 0px;
+		bottom: 0;
+	}
+	.offer-2 {
+		flex: 0 1 85%;
+	}
+	.offer-3 {
+		flex: 0 1 100%;
+	}
+	.intro__offer-click {
+		margin-top: 16px;
+		text-align: center;
+	}
+	.problems-washer,
+	.problems-pattern,
+	.problems-pattern-2 {
+		display: none;
+	}
+	.problems__decision {
+		display: none;
+	}
+	.problems__mobile {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.problems__list-button {
+		font-family: "Norms-Medium", sans-serif;
+		font-size: 16px;
+		line-height: 24px;
+		text-align: center;
+		color: #96317d;
+		border: 1px solid #96317d;
+		background-color: #fff;
+		border-radius: 15px;
+		padding: 10px 15px;
+		margin-right: 0px;
+		margin-bottom: 20px;
+		width: 48%;
+		-webkit-transition: all 0.3s ease 0s;
+		-moz-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+		transition: all 0.3s ease 0s;
+	}
+	.problems__list-button:nth-child(odd) {
+		margin-right: 1%;
+	}
+	.questions__body {
+		flex-direction: column;
+		align-items: center;
+	}
+	.questions__title {
+		text-align: center;
+		max-width: none;
+	}
+	.questions__subtitle {
+		text-align: center;
+		max-width: none;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 840px) {
+	.footer__text {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+	.footer__center-img {
+		flex-wrap: wrap;
+		width: 100%;
+	}
+	.footer__center-left {
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+	.footer__center-right {
+		margin-top: 17px;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+@media (max-width: 780px) {
+	body.lock {
+		overflow: hidden;
+	}
+	.header__contacts.del {
+		display: none;
+	}
+	.header__logo {
+		position: relative;
+		z-index: 10;
+	}
+	.header__nav {
+		position: fixed;
+		top: -100%;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: #a95094;
+		transition: all 0.3s ease 0s;
+		overflow: hidden;
+	}
+	.header__nav.active {
+		top: 0;
+	}
+	.nav__list {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+	}
+	.nav__list > li:not(:last-child) {
+		margin-right: 0px;
+	}
+	.nav__list > li {
+		font-size: 32px;
+		margin-bottom: 28px;
+	}
+	.header__burger {
+		display: block;
+		width: 30px;
+		height: 20px;
+		position: relative;
+	}
+	.header__burger span {
+		position: absolute;
+		top: 9px;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before,
+	.header__burger:after {
+		content: "";
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 2px;
+		background-color: #fff;
+		transition: all 0.3s ease 0s;
+	}
+	.header__burger:before {
+		top: 0;
+	}
+	.header__burger:after {
+		bottom: 0;
+	}
+	.header__burger.active span {
+		transform: scale(0);
+	}
+	.header__burger.active:before {
+		transform: rotate(45deg);
+		top: 9px;
+	}
+	.header__burger.active:after {
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.advant {
+		padding-top: 75px;
+		padding-bottom: 25px;
+	}
+	.advant__column {
+		display: flex;
+		flex: 0 1 50%;
+		align-items: center;
+		margin-bottom: 50px;
+	}
+	.about__column-img {
+		width: 85px;
+		height: 60px;
+		margin-right: 25px;
+		margin-bottom: 0;
+	}
+	.problems-washer {
+		width: 372px;
+		top: 198px;
+	}
+	.problems-pattern-2 {
+		top: 429px;
+	}
+	.reviews__card {
+		padding: 50px 60px;
+	}
+	.contacts__map iframe {
+		width: 630px;
+		height: 370px;
+	}
+	.footer__list {
+		flex-direction: column;
+		align-items: center;
+	}
+	.footer__list > li:not(:last-child) {
+		margin-right: 0px;
+		margin-bottom: 20px;
+	}
+	.footer__list > li > a {
+		font-size: 20px;
+	}
+	.advant {
+		padding-top: 65px;
+	}
+	.advant__column {
+		justify-content: center;
+		flex: 0 1 100%;
+	}
+	.swiper-click {
+		justify-content: center;
+	}
+	.rating__list {
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 25px;
+	}
+	.footer__info {
+		width: 100%;
+		text-align: center;
+	}
+	.footer__info:first-child {
+		margin-bottom: 10px;
+	}
+	.intro {
+		height: 826px;
+	}
+	.intro-container {
+		padding-top: 190px;
+	}
+	.intro__title {
+		text-align: left;
+	}
+	.intro__subtitle {
+		text-align: left;
+		margin: 0 auto 150px auto;
+	}
+	.intro-repairman {
+		width: 349px;
+		right: 0;
+		bottom: 60px;
+		transform: translateX(0%);
+	}
+	.intro-washer {
+		width: 196px;
+		height: 279px;
+		left: 30px;
+		bottom: 113px;
+	}
+	.problems-container {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	.problems-washer {
+		width: 304px;
+		top: 170px;
+	}
+	.problems__warning {
+		padding-bottom: 20px;
+	}
+	.team {
+		padding-top: 75px;
+		padding-bottom: 80px;
+	}
+	.team__title {
+		margin-bottom: 35px;
+	}
+	.reviews__card {
+		padding: 30px 30px;
+	}
+	.reviews__top {
+		margin-bottom: 25px;
+	}
+	.questions {
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+	.questions__title {
+		text-align: left;
+	}
+	.questions__subtitle {
+		text-align: left;
+		margin-bottom: 35px;
+	}
+	.questions__item {
+		padding: 18px 25px;
+	}
+	.questions__question {
+		font-size: 16px;
+	}
+	.questions__answer {
+		font-size: 16px;
+	}
+	.problems__select {
+		max-width: none;
+		width: 90%;
+	}
+	.problems__warning {
+		width: 90%;
+	}
+}

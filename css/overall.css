@@ -1,0 +1,23 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	overflow-x: hidden;
+}
+section {
+	overflow-x: hidden;
+}
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+.btn-reset {
+	border: none;
+	border-radius: 15px;
+	cursor: pointer;
+}
+.text-yellow {
+	color: #ffc464;
+}
+.text-tapestry {
+	color: #a95094;
+}

@@ -1,0 +1,59 @@
+.team {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	background-color: #fafafa;
+}
+.team__subtitle {
+	font-family: "Norms-Medium", sans-serif;
+	font-size: 20px;
+	color: #96317d;
+	margin-bottom: 10px;
+	text-align: center;
+}
+.team__title {
+	font-family: "Norms-Bold", sans-serif;
+	font-size: calc(30px + 15 * (100vw - 320px) / (1440 - 480));
+	line-height: 40px;
+	letter-spacing: -0.015em;
+	color: #000000;
+	margin-bottom: 50px;
+	text-align: center;
+	transform: scale(0);
+	-webkit-transition: all 0.8s ease 0s;
+	-moz-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.team__title._active {
+	transform: scale(1);
+}
+.team__person {
+	background-color: #fff;
+}
+.person__text {
+	padding: 50px 45px;
+}
+.person__name {
+	font-family: "Norms-Medium", sans-serif;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 8px;
+}
+.person__specialty {
+	font-family: "Norms-Regular", sans-serif;
+	font-size: 16px;
+	color: #000000;
+	margin-bottom: 25px;
+}
+.person__list {
+	font-family: "Norms-Medium", sans-serif;
+	font-size: 16px;
+	color: #96317d;
+	text-align: left;
+}
+.person__list > li {
+	margin-bottom: 20px;
+}
+.person-icon {
+	margin-right: 12px;
+}

@@ -1,0 +1,47 @@
+.button-prev:after,
+.button-next:after {
+	color: #96317d;
+}
+.button-prev {
+	color: #96317d;
+}
+.button-next {
+	color: #96317d;
+}
+.button-next {
+	margin-left: 40px;
+	margin-right: 15px;
+}
+.swiper-slide {
+	text-align: center;
+}
+.swiper-button-disabled {
+	color: #000;
+}
+.swiper-click {
+	height: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.swiper-right {
+	width: 100%;
+	font-family: "Norms-Medium", sans-serif;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.swiper-wrapper {
+	margin-bottom: 35px;
+}
+.swiper-slide {
+	transform: translate(0px, 40%);
+	-webkit-transition: all 0.8s ease 0s;
+	-moz-transition: all 0.8s ease 0s;
+	-o-transition: all 0.8s ease 0s;
+	transition: all 0.8s ease 0s;
+}
+.swiper-slide._active {
+	transform: translate(0px, 0px);
+}
